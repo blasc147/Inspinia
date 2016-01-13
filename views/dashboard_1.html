@@ -1,24 +1,14 @@
 <div class="row wrapper border-bottom white-bg page-heading">
-    <div class="col-lg-10">
-        <h2>Sweet Alert</h2>
-        <ol class="breadcrumb">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a>Miscellaneous</a>
-            </li>
-            <li class="active">
-                <strong>Sweet Alert</strong>
-            </li>
-        </ol>
-    </div>
+
+    
+
+
 
     <div class="row"  >
         <div class="col-lg-12">
             <div class="ibox ">
                 <div class="ibox-title">
-                    <h5>Sweet Alert</h5>
+                    <h5>Todos los dispositivos</h5>
                 </div>
 
                 <div class="ibox-content">
@@ -49,9 +39,6 @@
                     <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
                     <button type="button" class="btn btn-sm btn-primary"> Buscar </button> </span></div>
 
-                </div>
-                <div ng-controller="modalDemoCtrl">
-                <button class="btn btn-sm btn-primary" ng-click="open()" tooltip-popup-delay="1000" tooltip="Agregar"> + </button>
                 </div>
             </div>
 
@@ -100,6 +87,7 @@
                         </div>
                         
                         <div class="col-md-3">
+                            <a href="">
                             <div class="widget-head-color-box lazur-bg p-lg text-center">
                                     <div class="m-b-md">
                                         <h2 class="font-bold no-margins">
@@ -114,21 +102,25 @@
                                         <span>10 Compartidos</span> 
                                     </div>
                                 </div>
+                            </a>
                          </div>
                         <div class="col-md-3">
-                                <div class="widget-head-color-box navy-bg p-lg text-center">
-                                    <div class="m-b-md">
-                                        <h2 class="font-bold no-margins">
-                                            Camara
-                                        </h2>
-                                        <small>Casa - Living</small>
+                               <a href="">
+                                   <div class="widget-head-color-box red-bg p-lg text-center">
+                                            <div class="m-b-md">
+                                                <h2 class="font-bold no-margins">
+                                                    Hub
+                                                </h2>
+                                                <small>Casa</small>
+                                            </div>
+                                            <center><i class="fa fa-wifi fa-5x"></i></center>
+
+                                            <div>
+                                                <span>100 Alertas</span> |
+                                                <span>10 Compartidos</span> 
+                                            </div>
                                     </div>
-                                    <center><i class="fa fa-video-camera fa-5x"></i></center>
-                                    <div>
-                                        <span>100 Alertas</span> |
-                                        <span>10 Compartidos</span> 
-                                    </div>
-                                </div>
+                                </a>   
                         </div>
                     
                     </div>         
@@ -151,4 +143,11 @@
                     </div>
                 </div>
     </div>
+</div>
+<div id="small-chat" ng-controller="modalDemoCtrl">
+
+    <a class="open-small-chat" ng-click="open()" tooltip-popup-delay="1000" tooltip="Agregar">
+        <i class="fa fa-plus fa-3x"></i>
+
+    </a>
 </div>
