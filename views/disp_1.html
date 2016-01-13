@@ -1,0 +1,154 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Sweet Alert</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Miscellaneous</a>
+            </li>
+            <li class="active">
+                <strong>Sweet Alert</strong>
+            </li>
+        </ol>
+    </div>
+
+    <div class="row"  >
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Sweet Alert</h5>
+                </div>
+
+                <div class="ibox-content">
+
+                    <div class="row">
+                <div class="col-sm-2 m-b-xs"><select class="input-sm form-control input-s-sm inline">
+                    <option value="0">Por Tipo</option>
+                    <option value="1">Tipo 1</option>
+                    <option value="1">Tipo 2</option>
+                    <option value="2">Tipo nada</option>
+                </select>
+                </div>
+                <div class="col-sm-2 m-b-xs"><select class="input-sm form-control input-s-sm inline">
+                    <option value="0">Por Lugar</option>
+                    <option value="1">Casa</option>
+                    <option value="1">Oficina</option>
+                    <option value="2">Rancho</option>
+                </select>
+                </div>
+                <div class="col-sm-2 m-b-xs"><select class="input-sm form-control input-s-sm inline">
+                    <option value="0">Por Grupo</option>
+                    <option value="1">Grupo 1</option>
+                    <option value="1">Grupo 2</option>
+                    <option value="2">Grupo 3</option>
+                </select>
+                </div>
+                <div class="col-sm-3">
+                    <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
+                    <button type="button" class="btn btn-sm btn-primary"> Buscar </button> </span></div>
+
+                </div>
+                <div ng-controller="modalDemoCtrl">
+                <button class="btn btn-sm btn-primary" ng-click="open()" tooltip-popup-delay="1000" tooltip="Agregar"> + </button>
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content animated fadeInRight" ng-controller="sweetAlertCtrl">
+                
+               
+                
+            
+                <div class="row" >
+                    
+                        <div class="col-md-3">
+                            <a href="">
+                                <div class="widget-head-color-box navy-bg p-lg text-center">
+                                        <div class="m-b-md">
+                                            <h2 class="font-bold no-margins">
+                                                Camara
+                                            </h2>
+                                            <small>Casa - Patio</small>
+                                        </div>
+                                        <center><i class="fa fa-video-camera fa-5x"></i></center>
+                                        <div>
+                                            <span>100 Alertas</span> |
+                                            <span>10 Compartidos</span> 
+                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+
+                        <a href="">
+                           <div class="widget-head-color-box yellow-bg p-lg text-center">
+                                    <div class="m-b-md">
+                                        <h2 class="font-bold no-margins">
+                                            Boton panico
+                                        </h2>
+                                        <small>Casa - Living</small>
+                                    </div>
+                                    <center><i class="fa fa-weibo fa-5x"></i></center>
+
+                                    <div>
+                                        <span>100 Alertas</span> |
+                                        <span>10 Compartidos</span> 
+                                    </div>
+                                </div>
+                        </a>        
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="widget-head-color-box lazur-bg p-lg text-center">
+                                    <div class="m-b-md">
+                                        <h2 class="font-bold no-margins">
+                                            Medidor
+                                        </h2>
+                                        <small>Casa - Living</small>
+                                    </div>
+                                    <center><i class="fa fa-bolt fa-5x"></i></center>
+
+                                    <div>
+                                        <span>100 Alertas</span> |
+                                        <span>10 Compartidos</span> 
+                                    </div>
+                                </div>
+                         </div>
+                        <div class="col-md-3">
+                                <div class="widget-head-color-box navy-bg p-lg text-center">
+                                    <div class="m-b-md">
+                                        <h2 class="font-bold no-margins">
+                                            Camara
+                                        </h2>
+                                        <small>Casa - Living</small>
+                                    </div>
+                                    <center><i class="fa fa-video-camera fa-5x"></i></center>
+                                    <div>
+                                        <span>100 Alertas</span> |
+                                        <span>10 Compartidos</span> 
+                                    </div>
+                                </div>
+                        </div>
+                    
+                    </div>         
+                </div> 
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>GeoPosicion de dispositivos</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <section id="map4" ng-controller="GoogleMaps">
+                            <div ui-map="myMap4" ui-options="mapOptions4" class="google-map"></div>
+                        </section>
+                    </div>
+                </div>
+    </div>
+</div>
